@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azbuka Stanovanja - Your Housing Solution">
+    <meta name="keywords" content="housing, real estate, living spaces">
+    <meta name="author" content="Azbuka Stanovanja">
+    
+    <title>Azbuka Stanovanja</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Defer JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/handlers.js" defer></script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo" aria-label="Azbuka Stanovanja - Return to homepage">
+                <img src="assets/images/logo.svg" alt="Azbuka Stanovanja Logo" width="80" height="80">
+            </a>
+
+            <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="header__menu-icon"></span>
+            </button>
+
+            <nav id="main-nav" class="header__nav" role="navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link" aria-current="page">Početna</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="Nekretnine.html" class="header__nav-link">Nekretnine</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="O_nama.html" class="header__nav-link">O nama</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#kontakt" class="header__nav-link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="hero-section">
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__image-wrapper">
+                        <img src="assets/images/Intro-img.jpg" alt="Azbuka Stanovanja Hero Image" class="hero__image">
+                    </div>
+                    <h1 class="hero__title">Azbuka <i>Stanovanja</i></h1>
+                </div>
+            </section>
+            <section class="hero-description">
+                <div class="container">
+                    <p class="hero__description">Od A do Š, svako slovo <i>Azbuke Stanovanja</i> vodi vas korak bliže idealnom prostoru, bilo da tražite mesto za život, novi početak ili poslovni iskorak. Naša agencija nudi pažljivo odabrane nekretnine u Beogradu, uz diskretan luksuz i posvećenu uslugu koja ostavlja trag</p>
+                </div>
+            </section>
+        </div>
+        <section class="izdvojeno">
+            <div class="container">
+                <h2 class="vrednosti__title">Dom počinje <i>slovom </i> koje vi izaberete.</h2>
+                <div class="card-list">
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>Izdavanje</h3>
+                            <p class="see-all">Istražite kompletnu ponudu</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/images/Izdavanje.jpg" alt="izdavanje">
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>Prodaja</h3>
+                            <p class="see-all">Istražite kompletnu ponudu</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/images/Kupovina.jpg" alt="Prodaja">
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>Poslovni prostori</h3>
+                            <p class="see-all">Istražite kompletnu ponudu</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/images/Poslovniprostor.jpg" alt="Poslovni prostori">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="vrednosti">
+            <div class="container">
+                <h2 class="vrednosti__title">Azbuka <i> naših</i>  vrednosti</h2>
+                <div class="alphabet-cards">
+                    <div class="alphabet-card">
+                        <div class="letter">A</div>
+                        <div class="description">Autentičnost u svakom prostoru.</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="letter">B</div>
+                        <div class="description">Bezbednost procesa i pravna sigurnost.</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="letter">V</div>
+                        <div class="description">Vizija savremenog stanovanja.</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="letter">G</div>
+                        <div class="description">Gostoprimstvo u pristupu klijentima.</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="letter">Ž</div>
+                        <div class="description">Životni prostor koji vam pristaje.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="kontakt">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__left">
+                        <h3 class="contact__heading">Kontaktirajte nas</h3>
+                        <p class="see-all">Istražite kompletnu ponudu</p>
+                    </div>
+                    <div class="contact__right">
+                        <p class="contact__text">Svaka nekretnina koju biramo, oglašavamo i predstavljamo ima svoju priču. Naša je da pronađemo onu koja vam pripada</p>
+                        <div class="contact__info-grid">
+                            <div class="contact__info-block">
+                                <h4>Kontakt</h4>
+                                <a href="tel:+381605255065">+381 60 5255065</a>
+                                <a href="mailto:nkr.homeway@gmail.com">nkr.homeway@gmail.com</a>
+                            </div>
+                            <div class="contact__info-block">
+                                <h4>Adresa</h4>
+                                <p>Kralja Milana 7</p>
+                                <p>Beograd (Stari Grad)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <nav class="footer__nav">
+                    <a href="Nekretnine.html#kupovina" class="footer__link">Kupovina</a>
+                    <a href="Nekretnine.html#izdavanje" class="footer__link">Izdavanje</a>
+                    <a href="Nekretnine.html#poslovni-prostor" class="footer__link">Poslovni prostor</a>
+                    <a href="#kontakt" class="footer__link">Kontakt</a>
+                </nav>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">Instagram</a>
+                    <a href="#" class="footer__social-link">Facebook</a>
+                    <a href="#" class="footer__social-link">LinkedIn</a>
+                </div>
+                <p class="footer__copyright">© 2024 Azbuka Stanovanja. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/handlers.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html> 
