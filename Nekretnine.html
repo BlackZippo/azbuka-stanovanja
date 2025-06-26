@@ -39,6 +39,520 @@
     </header>
 
     <main>
+        <section class="vrednosti">
+            <div class="container">
+                <h2 class="vrednosti__title">Pregled svih nekretnina u <i>Beogradu</i></h2>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <button class="filter-button" aria-expanded="false">
+                            <div class="filter-value">
+                                Svi tipovi
+                                <svg class="filter-icon" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                            <div class="filter-label">Tip nekretnine</div>
+                        </button>
+                        <div class="filter-dropdown" hidden>
+                            <div class="filter-option">Svi tipovi</div>
+                            <div class="filter-option">Kupovina</div>
+                            <div class="filter-option">Izdavanje</div>
+                            <div class="filter-option">Poslovni prostor</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-button" aria-expanded="false">
+                            <div class="filter-value">
+                                Svi gradovi
+                                <svg class="filter-icon" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                            <div class="filter-label">Grad</div>
+                        </button>
+                        <div class="filter-dropdown" hidden>
+                            <div class="filter-option">Svi gradovi</div>
+                            <div class="filter-option">Beograd</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-button" aria-expanded="false">
+                            <div class="filter-value">
+                                Sve lokacije
+                                <svg class="filter-icon" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                            <div class="filter-label">Lokacija</div>
+                        </button>
+                        <div class="filter-dropdown" hidden>
+                            <div class="filter-option">Sve lokacije</div>
+                            <div class="filter-option">Čukarica</div>
+                            <div class="filter-option">Novi Beograd</div>
+                            <div class="filter-option">Palilula</div>
+                            <div class="filter-option">Rakovica</div>
+                            <div class="filter-option">Savski venac</div>
+                            <div class="filter-option">Stari grad</div>
+                            <div class="filter-option">Voždovac</div>
+                            <div class="filter-option">Vračar</div>
+                            <div class="filter-option">Zemun</div>
+                            <div class="filter-option">Zvezdara</div>
+                            <div class="filter-option">Barajevo</div>
+                            <div class="filter-option">Grocka</div>
+                            <div class="filter-option">Lazarevac</div>
+                            <div class="filter-option">Mladenovac</div>
+                            <div class="filter-option">Obrenovac</div>
+                            <div class="filter-option">Sopot</div>
+                            <div class="filter-option">Surčin</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-button" aria-expanded="false">
+                            <div class="filter-value">
+                                Sve
+                                <svg class="filter-icon" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                            <div class="filter-label">Spavaća soba</div>
+                        </button>
+                        <div class="filter-dropdown" hidden>
+                            <div class="filter-option">Sve</div>
+                            <div class="filter-option">1+</div>
+                            <div class="filter-option">2+</div>
+                            <div class="filter-option">3+</div>
+                            <div class="filter-option">4+</div>
+                            <div class="filter-option">Open Space</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-button" aria-expanded="false">
+                            <div class="filter-value">
+                                Sve
+                                <svg class="filter-icon" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                            <div class="filter-label">Broj kupatila</div>
+                        </button>
+                        <div class="filter-dropdown" hidden>
+                            <div class="filter-option">Sve</div>
+                            <div class="filter-option">1+</div>
+                            <div class="filter-option">2+</div>
+                            <div class="filter-option">3+</div>
+                        </div>
+                    </div>
+
+                    <button class="clear-filters">Poništite filtere</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="property-listings">
+            <div class="container">
+                <div class="listings-grid">
+                    <!-- Kupovina Properties -->
+                    <article class="property-card" data-type="kupovina">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/kupovina/kupovina-1.jpg" alt="Moderna zgrada na Vračaru">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Moderna zgrada na Vračaru</h3>
+                            <div class="property-card__price">
+                                <span class="amount">450.000€</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Vračar</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>3</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Izdavanje Properties -->
+                    <article class="property-card" data-type="izdavanje">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/izdavanje/izdavanje-1.jpg" alt="Luksuzni apartman na Dorćolu">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Luksuzni apartman na Dorćolu</h3>
+                            <div class="property-card__price">
+                                <span class="amount">1.200€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Dorćol</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>2</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Poslovni prostor Properties -->
+                    <article class="property-card" data-type="poslovni-prostor">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/poslovni-prostor/poslovni-1.jpg" alt="Moderan poslovni prostor u Novom Beogradu">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Moderan poslovni prostor u Novom Beogradu</h3>
+                            <div class="property-card__price">
+                                <span class="amount">2.500€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Novi Beograd</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>Open Space</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Kupovina Properties -->
+                    <article class="property-card" data-type="kupovina">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/kupovina/kupovina-2.jpg" alt="Nova zgrada na Zvezdari">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Luksuzna vila na Dedinju</h3>
+                            <div class="property-card__price">
+                                <span class="amount">980.000€</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Dedinje</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>5</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Izdavanje Properties -->
+                    <article class="property-card" data-type="izdavanje">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/izdavanje/izdavanje-2.jpg" alt="Moderno opremljen stan na Novom Beogradu">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Moderno opremljen stan na Novom Beogradu</h3>
+                            <div class="property-card__price">
+                                <span class="amount">800€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Novi Beograd</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>2</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Poslovni prostor Properties -->
+                    <article class="property-card" data-type="poslovni-prostor">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/poslovni-prostor/poslovni-2.jpg" alt="Kancelarijski prostor u Skyline-u">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Kancelarijski prostor u Skyline-u</h3>
+                            <div class="property-card__price">
+                                <span class="amount">3.500€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Novi Beograd</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>Open Space</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Kupovina Properties -->
+                    <article class="property-card" data-type="kupovina">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/kupovina/kupovina-3.jpg" alt="Luksuzni stan na Dorćolu">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Luksuzni stan na Dorćolu</h3>
+                            <div class="property-card__price">
+                                <span class="amount">420.000€</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Dorćol</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>3</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Izdavanje Properties -->
+                    <article class="property-card" data-type="izdavanje">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/izdavanje/izdavanje-3.jpg" alt="Renoviran stan na Zvezdari">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Renoviran stan na Zvezdari</h3>
+                            <div class="property-card__price">
+                                <span class="amount">450€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Zvezdara</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>1</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Poslovni prostor Properties -->
+                    <article class="property-card" data-type="poslovni-prostor">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/poslovni-prostor/poslovni-3.jpg" alt="Poslovni prostor u Navigator 2">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Poslovni prostor u Navigator 2</h3>
+                            <div class="property-card__price">
+                                <span class="amount">3.200€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Novi Beograd</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>Open Space</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Kupovina Properties -->
+                    <article class="property-card" data-type="kupovina">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/kupovina/kupovina-4.jpg" alt="Penthouse na Novom Beogradu">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Penthouse na Novom Beogradu</h3>
+                            <div class="property-card__price">
+                                <span class="amount">680.000€</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Novi Beograd</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Izdavanje Properties -->
+                    <article class="property-card" data-type="izdavanje">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/izdavanje/izdavanje-4.jpg" alt="Namešten stan na Vračaru">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Namešten stan na Vračaru</h3>
+                            <div class="property-card__price">
+                                <span class="amount">600€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Vračar</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>2</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More Poslovni prostor Properties -->
+                    <article class="property-card" data-type="poslovni-prostor">
+                        <div class="property-card__image">
+                            <img src="assets/images/properties/poslovni-prostor/poslovni-4.jpg" alt="Poslovni prostor u Green Heart-u">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Poslovni prostor u Green Heart-u</h3>
+                            <div class="property-card__price">
+                                <span class="amount">4.800€</span>
+                                <span class="period">/mesečno</span>
+                            </div>
+                            <div class="property-card__location">
+                                <span class="city">Beograd</span>
+                                <span class="separator">•</span>
+                                <span class="district">Novi Beograd</span>
+                            </div>
+                            <div class="property-card__features">
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"/>
+                                    </svg>
+                                    <span>Open Space</span>
+                                </div>
+                                <div class="feature">
+                                    <svg class="feature-icon" viewBox="0 0 24 24">
+                                        <path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"/>
+                                    </svg>
+                                    <span>6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- End of property cards -->
+                </div>
+            </div>
+        </section>
+
         <section id="kupovina" class="property-section">
             <!-- Kupovina section content will go here -->
         </section>
